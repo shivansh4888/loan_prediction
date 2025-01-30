@@ -10,43 +10,67 @@
   <div class="container">
     <h1>Loan Status Predictor</h1>
     <form method="POST" action="/predict">
-      <label for="id">ID:</label>
-      <input type="number" id="id" name="id" required>
+      <div class="input-group">
+        <label for="id">ID:</label>
+        <input type="number" id="id" name="id" required>
+      </div>
 
-      <label for="person_age">Age:</label>
-      <input type="number" id="person_age" name="person_age" required>
+      <div class="input-group">
+        <label for="person_age">Age:</label>
+        <input type="number" id="person_age" name="person_age" required>
+      </div>
 
-      <label for="person_income">Income:</label>
-      <input type="number" id="person_income" name="person_income" required>
+      <div class="input-group">
+        <label for="person_income">Income:</label>
+        <input type="number" id="person_income" name="person_income" required>
+      </div>
 
-      <label for="person_home_ownership">Home Ownership (1/0):</label>
-      <input type="number" id="person_home_ownership" name="person_home_ownership" required>
+      <div class="input-group">
+        <label for="person_home_ownership">Home Ownership (1/0):</label>
+        <input type="number" id="person_home_ownership" name="person_home_ownership" required>
+      </div>
 
-      <label for="person_emp_length">Employment Length:</label>
-      <input type="number" id="person_emp_length" name="person_emp_length" required>
+      <div class="input-group">
+        <label for="person_emp_length">Employment Length:</label>
+        <input type="number" id="person_emp_length" name="person_emp_length" required>
+      </div>
 
-      <label for="loan_intent">Loan Intent:</label>
-      <input type="number" id="loan_intent" name="loan_intent" required>
+      <div class="input-group">
+        <label for="loan_intent">Loan Intent:</label>
+        <input type="number" id="loan_intent" name="loan_intent" required>
+      </div>
 
-      <label for="loan_grade">Loan Grade:</label>
-      <input type="number" id="loan_grade" name="loan_grade" required>
+      <div class="input-group">
+        <label for="loan_grade">Loan Grade:</label>
+        <input type="number" id="loan_grade" name="loan_grade" required>
+      </div>
 
-      <label for="loan_amnt">Loan Amount:</label>
-      <input type="number" id="loan_amnt" name="loan_amnt" required>
+      <div class="input-group">
+        <label for="loan_amnt">Loan Amount:</label>
+        <input type="number" id="loan_amnt" name="loan_amnt" required>
+      </div>
 
-      <label for="loan_int_rate">Interest Rate:</label>
-      <input type="number" id="loan_int_rate" name="loan_int_rate" step="0.01" required>
+      <div class="input-group">
+        <label for="loan_int_rate">Interest Rate:</label>
+        <input type="number" id="loan_int_rate" name="loan_int_rate" step="0.01" required>
+      </div>
 
-      <label for="loan_percent_income">Percent Income:</label>
-      <input type="number" id="loan_percent_income" name="loan_percent_income" step="0.01" required>
+      <div class="input-group">
+        <label for="loan_percent_income">Percent Income:</label>
+        <input type="number" id="loan_percent_income" name="loan_percent_income" step="0.01" required>
+      </div>
 
-      <label for="cb_person_default_on_file">Default on File (1/0):</label>
-      <input type="number" id="cb_person_default_on_file" name="cb_person_default_on_file" required>
+      <div class="input-group">
+        <label for="cb_person_default_on_file">Default on File (1/0):</label>
+        <input type="number" id="cb_person_default_on_file" name="cb_person_default_on_file" required>
+      </div>
 
-      <label for="cb_person_cred_hist_length">Credit History Length:</label>
-      <input type="number" id="cb_person_cred_hist_length" name="cb_person_cred_hist_length" required>
+      <div class="input-group">
+        <label for="cb_person_cred_hist_length">Credit History Length:</label>
+        <input type="number" id="cb_person_cred_hist_length" name="cb_person_cred_hist_length" required>
+      </div>
 
-      <button type="submit">Predict</button>
+      <button type="submit" class="btn">Predict</button>
     </form>
 
     {% if loan_status %}
